@@ -1,0 +1,30 @@
+Metadata-Version: 1.0
+Name: pm4py
+Version: 1.2.11
+Summary: Process Mining for Python
+Home-page: http://www.pm4py.org
+Author: Fraunhofer Institute for Applied Technology
+Author-email: pm4py@fit.fraunhofer.de
+License: GPL 3.0
+Project-URL: Documentation, http://www.pm4py.org
+Project-URL: Source, https://github.com/pm4py/pm4py-source
+Project-URL: Tracker, https://github.com/pm4py/pm4py-source/issues
+Description: Welcome to Process Mining for Python!
+        
+        PM4Py is a python library that supports (state-of-the-art) process mining algorithms in python. It is completely open source and intended to be used in both academia and industry projects.
+        
+        The official website of the library is http://pm4py.org/
+        
+        You can always check out (changes to) the source code at the github repo.
+        
+        A very simple example, to whet your appetite:
+        
+        from pm4py.algo.discovery.alpha import factory as alpha_miner
+        from pm4py.objects.log.importer.xes import factory as xes_importer
+        from pm4py.visualization.petrinet import factory as vis_factory
+        
+        log = xes_importer.import_log('<path-to-xes-log-file>')
+        net, initial_marking, final_marking = alpha_miner.apply(log)
+        gviz = vis_factory.apply(net, initial_marking, final_marking)
+        vis_factory.view(gviz)
+Platform: UNKNOWN

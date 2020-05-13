@@ -1,0 +1,648 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pm4py.objects.stochastic_petri package &mdash; pm4py  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pm4py
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pm4py.objects.stochastic_petri package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pm4py.objects.stochastic_petri.ctmc">pm4py.objects.stochastic_petri.ctmc module</a></li>
+<li><a class="reference internal" href="#module-pm4py.objects.stochastic_petri.lp_perf_bounds">pm4py.objects.stochastic_petri.lp_perf_bounds module</a></li>
+<li><a class="reference internal" href="#module-pm4py.objects.stochastic_petri.map">pm4py.objects.stochastic_petri.map module</a></li>
+<li><a class="reference internal" href="#module-pm4py.objects.stochastic_petri.tangible_reachability">pm4py.objects.stochastic_petri.tangible_reachability module</a></li>
+<li><a class="reference internal" href="#module-pm4py.objects.stochastic_petri">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pm4py</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>pm4py.objects.stochastic_petri package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pm4py.objects.stochastic_petri.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pm4py-objects-stochastic-petri-package">
+<h1>pm4py.objects.stochastic_petri package<a class="headerlink" href="#pm4py-objects-stochastic-petri-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pm4py.objects.stochastic_petri.ctmc">
+<span id="pm4py-objects-stochastic-petri-ctmc-module"></span><h2>pm4py.objects.stochastic_petri.ctmc module<a class="headerlink" href="#module-pm4py.objects.stochastic_petri.ctmc" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.get_color_from_probabilities">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">get_color_from_probabilities</code><span class="sig-paren">(</span><em>prob_dictionary</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#get_color_from_probabilities"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.get_color_from_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns colors from a dictionary of probabilities</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>prob_dictionary</strong> – Dictionary of probabilities</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dictionary of colors</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>color_dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.get_corr_hex">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">get_corr_hex</code><span class="sig-paren">(</span><em>num</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#get_corr_hex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.get_corr_hex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets correspondence between a number
+and an hexadecimal string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>num</strong> – Number</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Hexadecimal string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>hex_string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.get_q_matrix_from_tangible_exponential">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">get_q_matrix_from_tangible_exponential</code><span class="sig-paren">(</span><em>tangible_reach_graph</em>, <em>stochastic_info</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#get_q_matrix_from_tangible_exponential"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.get_q_matrix_from_tangible_exponential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Q matrix from tangible reachability graph and stochastic map where the
+distribution type has been forced to be exponential</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tangible_reach_graph</strong> – Tangible reachability graph</p></li>
+<li><p><strong>stochastic_info</strong> – Stochastic map for each transition</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Q-matrix from the tangible reachability graph</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>q_matrix</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.nullspace">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">nullspace</code><span class="sig-paren">(</span><em>a_matrix</em>, <em>atol=1e-13</em>, <em>rtol=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#nullspace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.nullspace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute an approximate basis for the nullspace of A.</p>
+<p>The algorithm used by this function is based on the singular value
+decomposition of <cite>A</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_matrix</strong> (<em>ndarray</em>) – A should be at most 2-D.  A 1-D array with length k will be treated
+as a 2-D with shape (1, k)</p></li>
+<li><p><strong>atol</strong> (<em>float</em>) – The absolute tolerance for a zero singular value.  Singular values
+smaller than <cite>atol</cite> are considered to be zero.</p></li>
+<li><p><strong>rtol</strong> (<em>float</em>) – The relative tolerance.  Singular values less than rtol*smax are
+considered to be zero, where smax is the largest singular value.</p></li>
+<li><p><strong>If both `atol` and `rtol` are positive, the combined tolerance is the</strong></p></li>
+<li><p><strong>maximum of the two; that is::</strong> – tol = max(atol, rtol * smax)</p></li>
+<li><p><strong>Singular values smaller than `tol` are considered to be zero.</strong></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>ns</strong> – If <cite>A</cite> is an array with shape (m, k), then <cite>ns</cite> will be an array
+with shape (k, n), where n is the estimated dimension of the
+nullspace of <cite>A</cite>.  The columns of <cite>ns</cite> are a basis for the
+nullspace; each element in numpy.dot(A, ns) will be approximately
+zero.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.steadystate_analysis_from_tangible_q_matrix">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">steadystate_analysis_from_tangible_q_matrix</code><span class="sig-paren">(</span><em>tangible_reach_graph</em>, <em>q_matrix</em>, <em>tol=1e-14</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#steadystate_analysis_from_tangible_q_matrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.steadystate_analysis_from_tangible_q_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do steadystate analysis from tangible reachability graph and Q matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tangible_reach_graph</strong> – Tangible reachability graph</p></li>
+<li><p><strong>q_matrix</strong> – Q matrix</p></li>
+<li><p><strong>tol</strong> – Tolerance in order to admit states in the steady state</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dictionary of states along with their probability in the long term</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>steadystate</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_dataframe">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">transient_analysis_from_dataframe</code><span class="sig-paren">(</span><em>df</em>, <em>delay</em>, <em>parameters=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#transient_analysis_from_dataframe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the transient analysis from a dataframe and a delay</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – Pandas dataframe</p></li>
+<li><p><strong>delay</strong> – Time delay</p></li>
+<li><p><strong>parameters</strong> – Parameters of the algorithm</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Transient analysis result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>transient_result</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_log">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">transient_analysis_from_log</code><span class="sig-paren">(</span><em>log</em>, <em>delay</em>, <em>parameters=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#transient_analysis_from_log"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the transient analysis from a log and a delay</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log</strong> – Event log</p></li>
+<li><p><strong>delay</strong> – Time delay</p></li>
+<li><p><strong>parameters</strong> – Parameters of the algorithm</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Transient analysis result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>transient_result</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_petri_net_and_smap">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">transient_analysis_from_petri_net_and_smap</code><span class="sig-paren">(</span><em>net</em>, <em>im</em>, <em>s_map</em>, <em>delay</em>, <em>parameters=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#transient_analysis_from_petri_net_and_smap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_petri_net_and_smap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the transient analysis from a Petri net, a stochastic map and a delay</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log</strong> – Event log</p></li>
+<li><p><strong>delay</strong> – Time delay</p></li>
+<li><p><strong>parameters</strong> – Parameters of the algorithm</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Transient analysis result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>transient_result</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_tangible_q_matrix_and_single_state">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">transient_analysis_from_tangible_q_matrix_and_single_state</code><span class="sig-paren">(</span><em>tangible_reach_graph</em>, <em>q_matrix</em>, <em>source_state</em>, <em>time_diff</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#transient_analysis_from_tangible_q_matrix_and_single_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_tangible_q_matrix_and_single_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do transient analysis from tangible reachability graph, Q matrix and a single state to start from</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tangible_reach_graph</strong> – Tangible reachability graph</p></li>
+<li><p><strong>q_matrix</strong> – Q matrix</p></li>
+<li><p><strong>source_state</strong> – Source state to consider</p></li>
+<li><p><strong>time_diff</strong> – Time interval we want to investigate</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Transient analysis result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>transient_result</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_tangible_q_matrix_and_states_vector">
+<code class="descclassname">pm4py.objects.stochastic_petri.ctmc.</code><code class="descname">transient_analysis_from_tangible_q_matrix_and_states_vector</code><span class="sig-paren">(</span><em>tangible_reach_graph</em>, <em>q_matrix</em>, <em>states_vector</em>, <em>time_diff</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/ctmc.html#transient_analysis_from_tangible_q_matrix_and_states_vector"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.ctmc.transient_analysis_from_tangible_q_matrix_and_states_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do transient analysis from tangible reachability graph, Q matrix and a vector of probability of states</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tangible_reach_graph</strong> – Tangible reachability graph</p></li>
+<li><p><strong>q_matrix</strong> – Q matrix</p></li>
+<li><p><strong>states_vector</strong> – Vector of states probabilities to start from</p></li>
+<li><p><strong>time_diff</strong> – Time interval we want to investigate</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Transient analysis result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>transient_result</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pm4py.objects.stochastic_petri.lp_perf_bounds">
+<span id="pm4py-objects-stochastic-petri-lp-perf-bounds-module"></span><h2>pm4py.objects.stochastic_petri.lp_perf_bounds module<a class="headerlink" href="#module-pm4py.objects.stochastic_petri.lp_perf_bounds" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds">
+<em class="property">class </em><code class="descclassname">pm4py.objects.stochastic_petri.lp_perf_bounds.</code><code class="descname">LpPerfBounds</code><span class="sig-paren">(</span><em>net</em>, <em>initial_marking</em>, <em>final_marking</em>, <em>smap</em>, <em>avg_time_starts</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_18_samplepath">
+<code class="descname">build_18_samplepath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_18_samplepath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_18_samplepath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample path condition</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_19_samplepath">
+<code class="descname">build_19_samplepath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_19_samplepath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_19_samplepath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple path condition</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_1_throughput">
+<code class="descname">build_1_throughput</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_1_throughput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_1_throughput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Throughput equation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_21_samplepath">
+<code class="descname">build_21_samplepath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_21_samplepath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_21_samplepath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_22_samplepath">
+<code class="descname">build_22_samplepath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_22_samplepath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_22_samplepath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_26_littlelaw">
+<code class="descname">build_26_littlelaw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_26_littlelaw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_26_littlelaw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Little law equation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_2_flowbalance">
+<code class="descname">build_2_flowbalance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_2_flowbalance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_2_flowbalance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flow-balance equation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_3_secondmoment">
+<code class="descname">build_3_secondmoment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_3_secondmoment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_3_secondmoment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Second moment equation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_4_populationcovariance">
+<code class="descname">build_4_populationcovariance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_4_populationcovariance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_4_populationcovariance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Population covariance equation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_5_liveness">
+<code class="descname">build_5_liveness</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_5_liveness"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_5_liveness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Liveness equation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_6_liveness">
+<code class="descname">build_6_liveness</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_6_liveness"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_6_liveness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Liveness equation (second part)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_general_cond">
+<code class="descname">build_general_cond</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_general_cond"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_general_cond" title="Permalink to this definition">¶</a></dt>
+<dd><p>General conditions on the non-negativity of the variables</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_preset_postset">
+<code class="descname">build_preset_postset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_preset_postset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_preset_postset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Memorize the preset and the postset of the places/transitions of the Petri net</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_problem">
+<code class="descname">build_problem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_problem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_problem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the linear programming problem</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_var_corr">
+<code class="descname">build_var_corr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.build_var_corr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.build_var_corr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the correspondence between the variables of the model and the columns</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.get_net">
+<code class="descname">get_net</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.get_net"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.get_net" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the transformed Petri net used by the simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><em>net</em> – Petri net</p></li>
+<li><p><em>initial_marking</em> – Initial marking</p></li>
+<li><p><em>final_marking</em> – Final marking</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.solve_problem">
+<code class="descname">solve_problem</code><span class="sig-paren">(</span><em>target_variable</em>, <em>maximize=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.solve_problem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.solve_problem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solve the linear programming problem</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.transform_net">
+<code class="descname">transform_net</code><span class="sig-paren">(</span><em>net0</em>, <em>initial_marking0</em>, <em>final_marking0</em>, <em>s_map</em>, <em>avg_time_starts</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/lp_perf_bounds.html#LpPerfBounds.transform_net"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.lp_perf_bounds.LpPerfBounds.transform_net" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform the source Petri net removing the initial and final marking, and connecting
+to each “initial” place a hidden timed transition mimicking the case start</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>net0</strong> – Initial Petri net provided to the object</p></li>
+<li><p><strong>initial_marking0</strong> – Initial marking of the Petri net provided to the object</p></li>
+<li><p><strong>final_marking0</strong> – Final marking of the Petri net provided to the object</p></li>
+<li><p><strong>s_map</strong> – Stochastic map of transitions (EXPONENTIAL distribution since we assume a Markovian process)</p></li>
+<li><p><strong>avg_time_starts</strong> – Average time interlapsed between case starts</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>net</em> – Petri net that will be simulated</p></li>
+<li><p><em>initial_marking</em> – Initial marking of the Petri net that will be simulated (empty)</p></li>
+<li><p><em>final_marking</em> – Final marking of the Petri net that will be simulated (empty)</p></li>
+<li><p><em>s_map</em> – Stochastic map of transitions enriched by new hidden case-generator transitions</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pm4py.objects.stochastic_petri.map">
+<span id="pm4py-objects-stochastic-petri-map-module"></span><h2>pm4py.objects.stochastic_petri.map module<a class="headerlink" href="#module-pm4py.objects.stochastic_petri.map" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.map.get_map_exponential_from_aggstatistics">
+<code class="descclassname">pm4py.objects.stochastic_petri.map.</code><code class="descname">get_map_exponential_from_aggstatistics</code><span class="sig-paren">(</span><em>agg_statistics</em>, <em>parameters=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/map.html#get_map_exponential_from_aggstatistics"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.map.get_map_exponential_from_aggstatistics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get transition stochastic distribution map (exponential variable forced) given the log and the Petri net</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>agg_statistics</strong> – Aggregated statistics calculated on the DFG graph and the Petri net</p></li>
+<li><p><strong>parameters</strong> – Parameters of the algorithm</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Map that to each transition associates a random variable</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>stochastic_map</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.map.get_map_from_log_and_net">
+<code class="descclassname">pm4py.objects.stochastic_petri.map.</code><code class="descname">get_map_from_log_and_net</code><span class="sig-paren">(</span><em>log</em>, <em>net</em>, <em>initial_marking</em>, <em>final_marking</em>, <em>force_distribution=None</em>, <em>parameters=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/map.html#get_map_from_log_and_net"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.map.get_map_from_log_and_net" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get transition stochastic distribution map given the log and the Petri net</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul>
+<li><p><strong>log</strong> – Event log</p></li>
+<li><p><strong>net</strong> – Petri net</p></li>
+<li><p><strong>initial_marking</strong> – Initial marking of the Petri net</p></li>
+<li><p><strong>final_marking</strong> – Final marking of the Petri net</p></li>
+<li><p><strong>force_distribution</strong> – If provided, distribution to force usage (e.g. EXPONENTIAL)</p></li>
+<li><p><strong>parameters</strong> –</p>
+<dl class="simple">
+<dt>Parameters of the algorithm, including:</dt><dd><p>PARAM_ACTIVITY_KEY -&gt; activity name
+PARAM_TIMESTAMP_KEY -&gt; timestamp key</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Map that to each transition associates a random variable</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>stochastic_map</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pm4py.objects.stochastic_petri.tangible_reachability">
+<span id="pm4py-objects-stochastic-petri-tangible-reachability-module"></span><h2>pm4py.objects.stochastic_petri.tangible_reachability module<a class="headerlink" href="#module-pm4py.objects.stochastic_petri.tangible_reachability" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="pm4py.objects.stochastic_petri.tangible_reachability.get_tangible_reachability_from_reachability">
+<code class="descclassname">pm4py.objects.stochastic_petri.tangible_reachability.</code><code class="descname">get_tangible_reachability_from_reachability</code><span class="sig-paren">(</span><em>reach_graph</em>, <em>stochastic_info</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pm4py/objects/stochastic_petri/tangible_reachability.html#get_tangible_reachability_from_reachability"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pm4py.objects.stochastic_petri.tangible_reachability.get_tangible_reachability_from_reachability" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the tangible reachability graph from the reachability graph and the stochastic transition map</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reach_graph</strong> – Reachability graph</p></li>
+<li><p><strong>stochastic_info</strong> – Stochastic information</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Tangible reachability graph</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tangible_reach_graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pm4py.objects.stochastic_petri">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pm4py.objects.stochastic_petri" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
